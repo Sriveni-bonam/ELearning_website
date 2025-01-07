@@ -76,7 +76,7 @@ body {
 
 .btn:hover {
   background-color: white;
-  color:#FF5722;
+  color:white;
 }
 
 /* Navbar Styles */
@@ -1194,30 +1194,7 @@ nav li:first-child {
   }
 }
 
-/* Footer Styling */
-.footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #003366; /* Blue color for footer */
-  color: white;
-}
 
-.footer span {
-  color: #FF5722; /* Orange color for footer text */
-}
-
-
-/* Footer Styling */
-.footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #333;
-  color: white;
-}
-
-.footer span {
-  color: #4CAF50;
-}
 /* Style for the bottom-right line/button */
 .bottom-right-line {
   position: fixed; /* Fixes the element in place even when scrolling */
