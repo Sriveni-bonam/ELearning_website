@@ -168,7 +168,7 @@ const questions = [
   
   // Navigate to Courses Page
   function goToCoursesPage() {
-    window.location.href = "c.html"; // Replace with the actual URL or page name
+    window.location.href = "htmlcsscourse.html"; // Replace with the actual URL or page name
   }
   
   // Handle Submit Button Click
