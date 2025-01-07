@@ -21,7 +21,7 @@ const courses = [
     {
         title: "Complete Python Tutorial",
         description: "Learn the fundamentals of Python.",
-        imageUrl: "thumb-4.png"
+        imageUrl: "thumb-4.png",
         playlistLink: "https://www.youtube.com/playlist?list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3"
     },
     {
