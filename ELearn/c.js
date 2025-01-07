@@ -22,19 +22,19 @@ const courses = [
         title: "Complete Python Tutorial",
         description: "Learn the fundamentals of Python.",
         imageUrl: "thumb-4.png",
-        playlistLink: "https://www.youtube.com/playlist?list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3"
+        playlistLink: "c.html"
     },
     {
         title: "Complete Bootstrap Tutorial",
         description: "Learn Bootstrap.",
         imageUrl: "thumb-5.png",
-        playlistLink: "https://www.youtube.com/watch?v=-qfEOE4vtxE"
+        playlistLink: "c.html"
     },
     {
         title: "Complete Sass Tutorial",
         description: "Master Sass concepts.",
         imageUrl: "thumb-6.png",
-        playlistLink: "https://www.youtube.com/watch?v=KzEo82xcRSI"
+        playlistLink: "c.html"
     }
 ];
 
