@@ -75,7 +75,7 @@ body {
 }
 
 .btn:hover {
-  background-color: white;
+  background-color: #FF5722;
   color:white;
 }
 
@@ -234,6 +234,7 @@ nav li:first-child {
 
   .btn {
     font-size: 0.8rem;
+    
   }
 }
 
