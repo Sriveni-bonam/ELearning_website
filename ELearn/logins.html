@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Login</title>
+
+   <!-- Font Awesome CDN link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- Custom CSS file link -->
+   <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+
+<section class="form-container">
+   <!-- Close Button (X) -->
+   <button class="close-btn" onclick="window.history.back();">X</button>
+
+   <form action="" method="post" enctype="multipart/form-data">
+      <h3>Login now</h3>
+      <h5>Email <span>*</span></h5>
+      <input type="email" name="email" placeholder="Enter your email" required maxlength="50" class="box">
+      <h5>Password <span>*</span></h5>
+      <input type="password" name="pass" placeholder="Enter your password" required maxlength="20" class="box">
+      <input type="submit" value="Login now" name="submit" class="btn">
+   </form>
+
+   <!-- Forgot Password Link -->
+   <div class="forgot-password">
+      <a href="forgot-password.html">Forgot Password?</a>
+   </div>
+
+   <!-- Register Link -->
+   <div class="register-link">
+      <p>Don't have an account? <a href="registers.html">Register here</a></p>
+   </div>
+</section>
+
+<footer class="footer">
+   &copy; copyright @ 2022 by <span>mr. web designer</span> | all rights reserved!
+</footer>
+
+<!-- Custom JS file link -->
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELearn website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/bc6b0234c9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick="hideSidebar()">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+          <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
+        </svg></a>
+      </li>
+      <li class="highlight"><a href="#">HOME</a></li>
+      <li class="highlight"><a href="#about">ABOUT</a></li>
+      <li class="highlight"><a href="#courses">COURSES</a></li>
+      <li class="highlight"><a href="#contact">CONTACT US</a></li>
+      <li class="highlight"><a href="registers.html">SIGN IN</a></li>
+    </ul> 
+    <ul>
+      <li><a href="#">ELearn</a></li>
+      <li class="hideOnMobile highlight"><a href="#">HOME</a></li>
+      <li class="hideOnMobile highlight"><a href="#about">ABOUT</a></li>
+      <li class="hideOnMobile highlight"><a href="#courses">COURSES</a></li>
+      <li class="hideOnMobile highlight"><a href="#contact">CONTACT US</a></li>
+      <li class="hideOnMobile highlight"><a href="registers.html">SIGN UP</a></li>
+      <li class="menu-button" onclick="showSidebar()">
+        <a href="#"><svg class="hamburger-icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="24">
+          <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+        </svg></a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="background-container" id="home">
+    <div class="typed-text">
+      <h1>Welcome to <span style="color:#FF5722;">Elearn!</span></h1>
+      <p id="typed-text">Your journey to coding starts here.</p>
+    </div>
+    <div class="buttons-container">
+      <a href="#about"><button class="btn">Get started</button></a>
+      <a href="#courses"><button class="btn">Explore courses</button></a>
+    </div>
+  </div>
+
+  <section class="about-us" id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <div class="about-content">
+        <div class="image-content">
+          <img src="study_student1.jpg" alt="About Us Image">
+        </div>
+        <div class="text-content">
+          <p>At E-Learn, we aim to provide accessible, affordable, and high-quality education globally. Our platform offers a diverse range of online courses, from tech to business, catering to learners at all levels. Whether you’re looking to upskill or explore new career opportunities, E-Learn has the resources to help you succeed.</p>
+          <a href="about.html"><button class="btn">Know more</button></a>
+        </div>
+      </div>
+      <div class="features">
+        <div class="feature">
+          <i class="fas fa-check-circle"></i>
+          <span>Affordable Education</span>
+        </div>
+        <div class="feature">
+          <i class="fas fa-check-circle"></i>
+          <span>Expert Instructors</span>
+        </div>
+        <div class="feature">
+          <i class="fas fa-check-circle"></i>
+          <span>Practice Tests</span>
+        </div>
+        <div class="feature">
+          <i class="fas fa-check-circle"></i>
+          <span>24/7 Availability</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="courses" id="courses">
+    <div class="container">
+      <h2>Website Design Courses</h2>
+      <p>Get high quality responsive websites that can make a difference in your online presence and attract more customers.</p>
+      <div class="course-cards">
+        <div class="card">
+          <img src="webdesign.jpg" alt="Course 1">
+          <div class="card-content">
+            <h3>Responsive Web Design</h3>
+            <p>Learn how to create websites that work on all screen sizes, from desktops to mobile phones.</p>
+            <a href="htmlcsscourse.html" class="btn-secondary "><button>Read More</button></a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="htmlcss.webp" alt="Course 2">
+          <div class="card-content">
+            <h3>HTML & CSS Mastery</h3>
+            <p>Master the basics of HTML and CSS to build stunning websites from scratch.</p>
+            <a href="htmlcsscourse.html" class="btn-secondary"><button class="btn-secondary">Read More</button></a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="javascript.png" alt="Course 3">
+          <div class="card-content">
+            <h3>JavaScript for Beginners</h3>
+            <p>Get started with JavaScript and learn how to add interactivity to your websites.</p>
+            <a href="javascriptcourse.html" class="btn-secondary"><button>Read More</button></a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- View More Courses Button -->
+      <div class="view-more-container">
+        <a href="c.html"><button class="view-more-btn ">view more courses</button></a>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+
+    <div class="row">
+      <div class="image">
+        <img src="contact-img.svg" alt="Contact Image">
+      </div>
+
+      <form action="" method="post">
+        <h3>Get in touch</h3>
+        <input type="text" placeholder="Enter your name" name="name" required maxlength="50" class="box">
+        <input type="email" placeholder="Enter your email" name="email" required maxlength="50" class="box">
+        <input type="number" placeholder="Enter your number" name="number" required maxlength="50" class="box">
+        <textarea name="msg" class="box" placeholder="Enter your message" required maxlength="1000" cols="30" rows="5"></textarea>
+        <input type="submit" value="Send Message" class="inline-btn" name="submit">
+      </form>
+
+    </div>
+
+    <div class="box-containers">
+      <div class="boxs">
+        <i class="fas fa-phone"></i>
+        <div class="contact-info">
+          <a href="tel:1234567890">123-456-7890</a>
+        </div>
+      </div>
+    
+      <div class="boxs">
+        <i class="fas fa-envelope"></i>
+        <div class="contact-info">
+          <a href="mailto:shaikhanas@gmail.com">shaikhanas@gmail.com</a>
+        </div>
+      </div>
+    
+      <div class="boxs">
+        <i class="fas fa-map-marker-alt"></i>
+        <div class="contact-info">
+          <a href="#">Flat no. 1, A-1 Building, Jogeshwari, Mumbai, India - 400104</a>
+        </div>
+      </div>
+    </div>
+      
+  </section>
+ <!-- Add this code just before the closing </body> tag -->
+<div class="bottom-right-line">
+  <a href="#home">Back to Top</a>
+</div>
+<footer class="footer">
+
+  &copy; copyright @ 2022 by <span>ELearn</span> | all rights reserved!
+
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container for the sidebar and main content */
+.container {
+    display: flex;
+}
+
+/* Sidebar (Vertical Navigation Bar) */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #FF5722;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: white;
+    color: #FF5722;
+}
+
+.sidebar ul ul {
+    padding-left: 20px;
+    display: none;
+}
+
+.sidebar ul li > a {
+    cursor: pointer;
+}
+
+/* Dropdown symbol styling */
+.sidebar ul li a .dropdown {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Main Content Area */
+.main-content {
+    margin-left: 250px;
+    padding: 30px;
+    width: calc(100% - 250px);
+    background-color: white;
+}
+
+#flash-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#course-content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#nav-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#nav-buttons button:hover {
+    background-color: #FF5722;
+}
+
+#nav-buttons button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Completion Message */
+#completion-message {
+    margin-top: 20px;
+    text-align: center;
+    color: #4caf50;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Add some transitions for smooth hover effects */
+.sidebar ul li a, .sidebar ul li {
+    transition: all 0.3s ease;
+}
+
+/* Style for code blocks */
+code {
+    background-color: #f4f4f4;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-family: "Courier New", Courier, monospace;
+}
+
+pre code {
+    display: block;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 4px;
+}

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar with Background</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/bc6b0234c9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="swiper-bundle.min.css"/>
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick="hideSidebar()">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+          <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
+        </svg></a>
+      </li>
+      <li class="highlight"><a href="index.html">Home</a></li>
+      <li class="highlight"><a href="#about">About</a></li>
+      <li class="highlight"><a href="#courses">Popular courses</a></li>
+      <li class="highlight"><a href="#reviews">Student reviews</a></li>
+      <li class="highlight"><a href="#contact">Contact us</a></li>
+    </ul> 
+    <ul>
+      <li><a href="#">ELearn</a></li>
+      <li class="hideOnMobile highlight"><a href="index.html">Home</a></li>
+      <li class="hideOnMobile highlight"><a href="#about">About</a></li>
+      <li class="hideOnMobile highlight"><a href="#courses">Popular Courses</a></li>
+      <li class="hideOnMobile highlight"><a href="#reviews">Student Reviews</a></li>
+      <li class="hideOnMobile highlight"><a href="#contact">Contact us</a></li>
+      <li class="menu-button" onclick="showSidebar()">
+        <a href="#"><svg class="hamburger-icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="24">
+          <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+        </svg></a>
+      </li>
+    </ul>
+  </nav>
+  <section class="about-us" id="about">
+    <div class="container">
+      <h2 class="about-heading">About Us</h2>
+      <div class="about-content">
+        <div class="image-content">
+          <img src="study_student1.jpg" alt="About Us Image">
+        </div>
+        <div class="text-content">
+          <p>At E-Learn, we aim to provide accessible, affordable, and high-quality education globally. Our platform offers a diverse range of online courses, from tech to business, catering to learners at all levels. Whether you’re looking to upskill or explore new career opportunities, E-Learn has the resources to help you succeed.</p>
+        </div>
+      </div>
+      <div class="features">
+        <div class="feature">
+          <i class="fas fa-check-circle"></i>
+          <span>Affordable Education</span>
+        </div>
+        <div class="feature">
+          <i class="fas fa-check-circle"></i>
+          <span>Expert Instructors</span>
+        </div>
+        <div class="feature">
+          <i class="fas fa-check-circle"></i>
+          <span>Practice Tests</span>
+        </div>
+        <div class="feature">
+          <i class="fas fa-check-circle"></i>
+          <span id="courses">24/7 Availability</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <h2 id="courses">Our popular courses</h2>
+  <div class="subjects">
+    <div class="box-container">
+      <div class="box">
+        <img src="webdesign.jpg" alt="">
+        <h3>Responsive web designing</h3>
+        <p>38 modules</p>
+      </div>
+      <div class="box">
+        <img src="java.png" alt="">
+        <h3>Java</h3>
+        <p>25 modules</p>
+      </div>
+      <div class="box">
+        <img src="python.jpg" alt="">
+        <h3>Python</h3>
+        <p>12 modules</p>
+      </div>
+      <div class="box">
+        <img src="cloud.jpg" alt="">
+        <h3>Aws cloud</h3>
+        <p>32 modules</p>
+      </div>
+      <div class="box">
+        <img src="ai.jpg" alt="">
+        <h3>Artificial Intelligence</h3>
+        <p id="reviews">50 modules</p>
+      </div>
+    </div>
+  </div>                                                                    
+  <h2 id="reviews">Student Reviews</h2>
+  <div class="slide-container swiper">
+    <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper">
+            <!--1-->
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay">                           
+                    </span>
+
+                    <div class="card-image">
+                        <img src="pic-5.jpg" alt="img1" class="card-img">
+                    </div>
+                
+                </div>
+                <div class="card-content">
+                    <h2 class="name">Alice Johnson</h2>
+                    <p class="description">
+                        The course was exceptional! The lessons were clear, engaging, 
+                        and well-paced. I feel confident applying what I’ve learned in real-world scenarios.
+                    </p>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!--2-->
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay">                           
+                    </span>
+
+                    <div class="card-image">
+                        <img src="pic-4.jpg" alt="img1" class="card-img">
+                    </div>
+                
+                </div>
+                <div class="card-content">
+                    <h2 class="name">Ben Williams</h2>
+                    <p class="description">
+                        The learning experience was top-notch! The content was organized, 
+                        and the instructor's teaching style kept me engaged throughout the course.
+                    </p>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!--3-->
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay">                           
+                    </span>
+
+                    <div class="card-image">
+                        <img src="pic-1.jpg" alt="img1" class="card-img">
+                    </div>
+                
+                </div>
+                <div class="card-content">
+                    <h2 class="name">Johnathan Smith</h2>
+                    <p class="description">
+                        Fantastic course! I appreciated the clear explanations and the 
+                        real-world examples that helped me understand complex topics easily.
+                    </p>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!--4-->
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay">                           
+                    </span>
+
+                    <div class="card-image">
+                        <img src="pic-8.jpg" alt="img1" class="card-img">
+                    </div>
+                
+                </div>
+                <div class="card-content">
+                    <h2 class="name">Maria Garcia</h2>
+                    <p class="description">
+                        This was one of the best online courses I’ve taken. The material 
+                        was clear, and I loved the way it was broken down into manageable sections.
+                    </p>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!--5-->
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay">                           
+                    </span>
+
+                    <div class="card-image">
+                        <img src="pic-9.jpg" alt="img1" class="card-img">
+                    </div>
+                
+                </div>
+                <div class="card-content">
+                    <h2 class="name">Emily Davis</h2>
+                    <p class="description">
+                        The course exceeded my expectations! It was packed with practical 
+                        advice and resources. I feel much more prepared for my next career move.
+                    </p>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!--6-->
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay">                           
+                    </span>
+
+                    <div class="card-image">
+                        <img src="pic-3.jpg" alt="img1" class="card-img">
+                    </div>
+                
+                </div>
+                <div class="card-content">
+                    <h2 class="name">Lucas Lee</h2>
+                    <p class="description">
+                        A well-structured course with hands-on experience. The assignments 
+                        helped reinforce the material, and the instructor was always available for questions.
+                    </p>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!--7-->
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay">                           
+                    </span>
+
+                    <div class="card-image">
+                        <img src="pic-6.jpg" alt="img1" class="card-img">
+                    </div>
+                
+                </div>
+                <div class="card-content">
+                    <h2 class="name">Sophia Martinez</h2>
+                    <p class="description">
+                        The course was very well-paced and comprehensive. I feel confident 
+                        in the skills I gained and am excited to apply them in the real world.
+                    </p>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!--8-->
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay">                           
+                    </span>
+
+                    <div class="card-image">
+                        <img src="pic-5.jpg" alt="img1" class="card-img">                
+                    </div>
+                
+                </div>
+                <div class="card-content">
+                    <h2 class="name">Jack Wilson</h2>
+                    <p class="description">
+                        The course was highly engaging, and the instructor was very 
+                        responsive. I learned a lot and feel much more confident in my abilities.
+                    </p>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!--9-->
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay">                           
+                    </span>
+
+                    <div class="card-image">
+                        <img src="pic-4.jpg" alt="img1" class="card-img">                        
+                    </div>
+                
+                </div>
+                <div class="card-content">
+                    <h2 class="name">Olivia Brown</h2>
+                    <p class="description">
+                        The course offered a lot of value. The lessons were practical, 
+                        and I appreciated the interactive elements that made the learning process enjoyable.
+                    </p>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-pagination" id="contact"></div>
+  </div>
+  <div class="box-containers">
+    <div class="boxs">
+      <i class="fas fa-phone"></i>
+      <div class="contact-info">
+        <a href="tel:1234567890">123-456-7890</a>
+      </div>
+    </div>
+  
+    <div class="boxs">
+      <i class="fas fa-envelope"></i>
+      <div class="contact-info">
+        <a href="mailto:shaikhanas@gmail.com">shaikhanas@gmail.com</a>
+      </div>
+    </div>
+  
+    <div class="boxs">
+      <i class="fas fa-map-marker-alt"></i>
+      <div class="contact-info">
+        <a href="#">Flat no. 1, A-1 Building, Jogeshwari, Mumbai, India - 400104</a>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<footer class="footer">
+&copy; Copyright @ 2022 by <span>ELearn</span> | All rights reserved!
+</footer>
+
+</body>
+
+<script src="swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styling */
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 3rem 0;
+    color: #333;
+}
+
+/* Playlist Section */
+.playlist-videos {
+    padding: 3rem 1rem;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-items: center;
+}
+
+.box {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 280px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.box i {
+    font-size: 3rem;
+    color: #007BFF;
+    margin-bottom: 1rem;
+}
+
+.box img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.box h3 {
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.box a {
+    text-decoration: none;
+    display: block;
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+.footer span {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .box-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .box-container {
+        grid-template-columns: 1fr;
+    }
+    .heading {
+        font-size: 2rem;
+    }
+}
+/* Navbar Styles */
+nav {
+    background-color: #003366;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+  }
+  
+  nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  nav li {
+    height: 50px;
+  }
+  
+  nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  /* Don't change the background color of the hamburger icon on hover */
+  nav a:hover {
+    background-color: white; /* Remove hover background color */
+    color:#FF5722;
+  }
+  
+  nav li:first-child {
+    margin-right: auto;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .sidebar li {
+    width: 100%;
+  }
+  
+  .sidebar a {
+    width: 100%;
+  }
+  
+  .menu-button {
+    display: none;
+  }
+  .highlight:hover{
+    background-color: #FF5722;
+  }
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+  
+    .btn {
+      padding: 10px 18px; /* Adjust button size for medium screens */
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    /* Hide large menu items on small screens */
+    .hideOnMobile {
+      display: none;
+    }
+  
+    /* Show the menu button for mobile */
+    .menu-button {
+      display: block;
+    }
+  
+  
+    .buttons-container {
+      top: 50%; /* Move the buttons closer to the text */
+      flex-direction: column; /* Stack buttons vertically */
+    }
+  
+    .btn {
+      width: 100%;
+      padding: 14px;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .btn {
+      padding: 12px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .sidebar {
+      width: 100%;
+    }
+  
+    .btn {
+      font-size: 0.8rem;
+    }
+  }
+  
+  /* SVG Styling for the hamburger icon */
+  .hamburger-icon path {
+    fill: white; /* Change the color of the lines to white */
+  }

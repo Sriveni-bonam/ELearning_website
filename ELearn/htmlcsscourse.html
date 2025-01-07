@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML/CSS Introduction Course</title>
+    <link rel="stylesheet" href="htmlcsscourse.css">
+</head>
+<body>
+    
+    <div class="container">
+        <!-- Sidebar (Vertical Navigation Bar) -->
+        <div class="sidebar">
+            <h2>HTML/CSS Course</h2>
+            <ul>
+                <li>
+                    <a href="javascript:void(0)" onclick="toggleSubMenu('htmlMenu', this)">Introduction to HTML <span class="dropdown">▼</span></a>
+                    <ul id="htmlMenu" class="submenu">
+                        <li><a href="javascript:void(0)" onclick="showContent('basicHTML')">Basic HTML Structure</a></li>
+                        <li><a href="javascript:void(0)" onclick="showContent('htmlTags')">HTML Tags</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" onclick="toggleSubMenu('cssMenu', this)">Introduction to CSS <span class="dropdown">▼</span></a>
+                    <ul id="cssMenu" class="submenu">
+                        <li><a href="javascript:void(0)" onclick="showContent('basicCSS')">Basic CSS Syntax</a></li>
+                        <li><a href="javascript:void(0)" onclick="showContent('selectors')">CSS Selectors</a></li>
+                    </ul>
+                </li>
+                <li><a href="playlisthtmlcss.html">Video Courses</a></li>
+                <li><a href="htmlcssquiz.html">Assessment</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <div id="flash-card">
+                <div id="course-content">
+                    <h3>Welcome to the HTML/CSS Course</h3>
+                    <p>Click on a topic to see the course content here.</p>
+                </div>
+
+                <!-- Navigation buttons inside the flash card -->
+                <div id="nav-buttons">
+                    <button id="prev-btn" onclick="navigate('prev')" disabled>Previous</button>
+                    <button id="next-btn" onclick="navigate('next')">Next</button>
+                </div>
+            </div>
+
+            <!-- Assessment Section -->
+            <section id="assessment" class="hidden">
+                <h2>HTML & CSS Quiz</h2>
+                <div id="quiz-container">
+                    <div id="question-container">
+                        <p id="question">What is the capital of France?</p>
+                        <div id="options">
+                            <label>
+                                <input type="radio" name="option" value="A" class="option"> Berlin
+                            </label>
+                            <label>
+                                <input type="radio" name="option" value="B" class="option"> Madrid
+                            </label>
+                            <label>
+                                <input type="radio" name="option" value="C" class="option"> Paris
+                            </label>
+                            <label>
+                                <input type="radio" name="option" value="D" class="option"> Rome
+                            </label>
+                        </div>
+                        <div id="timer">10 seconds left</div>
+                        <button id="next-btn" class="hidden">Next Question</button>
+                    </div>
+                    <div id="result-container" class="hidden">
+                        <h3>Your Results:</h3>
+                        <div id="score"></div>
+                        <div id="appreciation"></div>
+                        <button id="check-answers-btn">Check Answers</button>
+                    </div>
+                    <div id="answers-container" class="hidden">
+                        <h3>Answers:</h3>
+                        <div id="selected-answers"></div>
+                        <div id="correct-answers"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="htmlcsscourse.js"></script>
+</body>
+</html>
