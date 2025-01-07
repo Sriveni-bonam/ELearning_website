@@ -21,20 +21,17 @@ const courses = [
     {
         title: "Complete Python Tutorial",
         description: "Learn the fundamentals of Python.",
-        imageUrl: "thumb-4.png",
-        playlistLink: "playlistpython.html"
+        imageUrl: "thumb-4.png"
     },
     {
         title: "Complete Bootstrap Tutorial",
         description: "Learn Bootstrap.",
         imageUrl: "thumb-5.png",
-        playlistLink: "playlistbootstrap.html"
     },
     {
         title: "Complete Sass Tutorial",
         description: "Master Sass concepts.",
         imageUrl: "thumb-6.png",
-        playlistLink: "playlistsass.html"
     }
 ];
 
