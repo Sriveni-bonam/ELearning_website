@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>watch</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="courses.css">
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+   <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+            <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
+          </svg></a>
+        </li>
+        <li class="highlight"><a href="c.html">Back to courses</a></li>
+      </ul> 
+      <ul>
+        <li><a href="#">ELearn</a></li>
+        <li class="hideOnMobile highlight"><a href="c.html">Back to courses</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"><svg class="hamburger-icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="24">
+            <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+          </svg></a>
+        </li>
+      </ul>
+    </nav>
+
+<section class="watch-video">
+
+   <div class="video-container">
+      <div class="video">
+         <video src="vid-1.mp4" controls poster="post-1-1.png" id="video"></video>
+      </div>
+      <h3 class="title">complete HTML tutorial (part 01)</h3>
+      <div class="info">
+         <p class="date"><i class="fas fa-calendar"></i><span>22-10-2022</span></p>
+         <p class="date"><i class="fas fa-heart"></i><span>44 likes</span></p>
+      </div>
+      <div class="tutor">
+         <img src="pic-2.jpg" alt="">
+         <div>
+            <h3>Elizabeth</h3>
+            <span>web developer</span>
+         </div>
+      </div>
+      <form action="" method="post" class="flex">
+         <a href="playlisthtmlcss.html" class="inline-btn">view playlist</a>
+      </form>
+      <p class="description">
+        This video lecture is about html and css basic course..
+      </p>
+   </div>
+
+</section>
+
+
+
+
+
+
+
+<footer class="footer">
+
+   &copy; copyright @ 2022 by <span>ELearn</span> | all rights reserved!
+
+</footer>
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+   
+</body>
+</html>
