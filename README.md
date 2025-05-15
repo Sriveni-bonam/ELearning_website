@@ -26,13 +26,36 @@ This project is a **fully responsive E-learning platform** developed using **HTM
 
 ---
 
-## 📸 RESULTS
-
 
 
 ## 🔗 LIVE DEMO
 
-[Click here to see the frontend live](https://your-live-demo-link.com)
+[Click here to see the frontend live](https://sriveni-bonam.github.io/ELearning_website/ELearn/index.html)
 
+---
+
+## 📸 RESULTS
+
+### 🏠 Home Page  
+![Home Page](https://github.com/Sriveni-bonam/ELearning_website/blob/2409615a3876db39d593bc85684024ffeb757a4e/Result/home%20page.png)
+
+### 📚 Course Listings  
+![Courses](https://github.com/Sriveni-bonam/ELearning_website/blob/2409615a3876db39d593bc85684024ffeb757a4e/Result/courses.png)
+
+### 🎥 Video Tutorial Page  
+![Video Tutorial](https://github.com/Sriveni-bonam/ELearning_website/blob/2409615a3876db39d593bc85684024ffeb757a4e/Result/course%20video.png)
+
+### 📄 Notes  
+![Notes](https://github.com/Sriveni-bonam/ELearning_website/blob/2409615a3876db39d593bc85684024ffeb757a4e/Result/notes.png)
+
+### 🧠 Quiz Page  
+![Quiz](https://github.com/Sriveni-bonam/ELearning_website/blob/2409615a3876db39d593bc85684024ffeb757a4e/Result/quiz.png)
+
+### 📊 Quiz Result  
+![Quiz Result](https://github.com/Sriveni-bonam/ELearning_website/blob/2409615a3876db39d593bc85684024ffeb757a4e/Result/result.png)
+
+### 🔍 Search Feature  
+![Search](https://github.com/Sriveni-bonam/ELearning_website/blob/2409615a3876db39d593bc85684024ffeb757a4e/Result/course%20finder%201.png)
+![Search1](https://github.com/Sriveni-bonam/ELearning_website/blob/2409615a3876db39d593bc85684024ffeb757a4e/Result/course%20finder.png)
 
 
